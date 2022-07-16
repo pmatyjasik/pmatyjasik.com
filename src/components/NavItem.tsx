@@ -9,7 +9,7 @@ interface Props{
 
 const NavItem = ({url, text, isOpen=false}:Props) => {
   return (
-    <li className={`text-white ${isOpen ? '' : 'mb-10'}`}><a href={url}>{text}</a></li>
+    <li className={`text-white ${isOpen ? 'mb-10' : ''}`}><a href={url}>{text}</a></li>
   );
 }
 
