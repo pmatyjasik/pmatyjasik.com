@@ -6,10 +6,10 @@ import MobileMenu from "components/MobileMenu";
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <div className="md:w-2/5 xl:w-1/3">
+    <div className="md:w-[45%] lg:w-1/3">
       <nav className="hidden md:block">
         <ul className="flex justify-around text-white">
-          <NavItem url='#' text='O mnie'/>
+          <NavItem url='#about' text='O mnie'/>
           <NavItem url='#' text='Technologie'/>
           <NavItem url='#' text='Portfolio'/>
           <NavItem url='#' text='Kontakty'/>
