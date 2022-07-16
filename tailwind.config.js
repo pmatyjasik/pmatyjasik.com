@@ -8,6 +8,8 @@ module.exports = {
       colors: {
         primary:'#355FE5',
         secondary:'#292D41',
+        heading:'#292929',
+        content:'#71727E',
       },
       screens: {
         'm-18': '1800px',
