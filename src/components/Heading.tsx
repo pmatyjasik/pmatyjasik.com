@@ -7,7 +7,7 @@ interface Props{
 
 const Heading = ({heading}:Props) => {
   return (
-      <span className='text-xl font-semibold cursor-pointer text-primary'>{heading}</span>
+      <span className='text-4xl font-semibold sm:text-6xl text-heading'>{heading}</span>
   );
 }
 
