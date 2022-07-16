@@ -3,8 +3,7 @@ import BubbleSVG from 'assets/bubble.svg';
 
 
 
-const Bubble = () => {
-  return (
+const Bubble = () => (
     <img 
     className="
     float-right 
@@ -19,8 +18,7 @@ const Bubble = () => {
     " 
     src={BubbleSVG} 
     alt="Bubble" />
-  );
-}
+)
 
 
 export default Bubble;
