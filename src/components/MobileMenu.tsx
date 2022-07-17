@@ -19,10 +19,10 @@ const MobileMenu = ({ isOpen }:Props) => {
       className='fixed right-0 z-10 flex flex-col items-center w-2/5 rounded-bl-[200px] rounded-tl-[50px] bg-primary top-15 md:hidden'
     >
         <ul className='py-10'>
-        <NavItem isOpen={true} url='#about' text='O mnie'/>
-        <NavItem isOpen={true} url='#' text='Technologie'/>
+        <NavItem isOpen={true} url='#about' text='About'/>
+        <NavItem isOpen={true} url='#technologies' text='Technologies'/>
         <NavItem isOpen={true} url='#' text='Portfolio'/>
-        <NavItem isOpen={true} url='#' text='Kontakty'/>
+        <NavItem isOpen={true} url='#contact' text='Contact'/>
 
         </ul>
     </motion.div>
