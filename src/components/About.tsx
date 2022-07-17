@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 
 const About = () => {
   return (
-    <div id="about" className="h-[75vh]">
+    <div id="about" className="h-[70vh]">
       <div className="flex flex-col items-center justify-center md:flex-row">
         <div className="md:w-1/2 md:flex md:flex-col">
           <h3 className="mb-2 text-xl text-secondary opacity-70">
