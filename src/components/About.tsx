@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div id="about">
       <div className='flex flex-col items-center justify-center md:flex-row'>
-        <div className='md:w-3/5 md:flex md:flex-col'>
+        <div className='md:w-1/2 md:flex md:flex-col'>
           <Heading heading='Front-end Developer'/>
           <p className='mt-10 leading-relaxed sm:leading-loose text-content md:w-5/6 lg:w-4/5 xl:w-3/4'>
           Hello, my name is Piotr Matyjasik I am from Poland 🇵🇱.
@@ -15,7 +15,7 @@ const About = () => {
           <br/>
           I am interested in modern technologies. I am involved in creating websites. In general, I am interested in everything about Frontend Development.
           <br/>
-          My free time is devoted to studying 💻, physical activity 🏋🏻 and meeting with friends.
+          My free time is devoted to studying, physical activity and meeting with friends.
           </p>
         </div>
         <div className='justify-center hidden mt-10 md:mt-0 md:flex md:justify-center'>
