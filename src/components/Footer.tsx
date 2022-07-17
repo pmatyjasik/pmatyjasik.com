@@ -6,7 +6,7 @@ const Footer = () => {
       <p>
         &copy; {new Date().getFullYear()} -{" "}
         <a href="https://www.linkedin.com/in/piotr-matyjasik/" rel="noopener noreferrer" target="_blank">
-          Piotr Matyjasik [pmatyjasik@icloud.com]
+          Piotr Matyjasik
         </a>
       </p>
     </footer>
