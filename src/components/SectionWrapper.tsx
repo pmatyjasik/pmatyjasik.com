@@ -1,15 +1,11 @@
 import React from "react";
 
-interface Props{
-    children:React.ReactNode;
+interface Props {
+  children: React.ReactNode;
 }
 
-const SectionWrapper = ({children}:Props) => {
-    return (
-        <div className="container mx-auto mt-[100px] px-10">
-            {children}
-        </div>
-    );
-}
+const SectionWrapper = ({ children }: Props) => {
+  return <div className="container px-10 mx-auto mt-24">{children}</div>;
+};
 
-export default SectionWrapper
+export default SectionWrapper;
