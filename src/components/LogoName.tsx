@@ -5,11 +5,9 @@ interface Props{
 }
 
 
-const LogoName = ({heading}:Props) => {
-  return (
-      <span className='text-xl font-semibold cursor-pointer text-primary'>{heading}</span>
-  );
-}
+const LogoName = ({heading}:Props) => (
+    <a href="/"> <span className='text-xl font-semibold cursor-pointer text-primary'>{heading}</span></a>
+);
 
 
 export default LogoName;
