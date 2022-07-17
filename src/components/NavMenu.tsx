@@ -9,10 +9,10 @@ const NavMenu = () => {
     <div className="md:w-[45%] lg:w-1/3">
       <nav className="hidden md:block">
         <ul className="flex justify-around text-white">
-          <NavItem url='#about' text='O mnie'/>
-          <NavItem url='#' text='Technologie'/>
+          <NavItem url='#about' text='About'/>
+          <NavItem url='#technologies' text='Technologies'/>
           <NavItem url='#' text='Portfolio'/>
-          <NavItem url='#' text='Kontakty'/>
+          <NavItem url='#contact' text='Contact'/>
         </ul>
       </nav>
       <FaBars
