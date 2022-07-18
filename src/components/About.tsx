@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 
 const About = () => {
   return (
-    <div id="about" className="h-[70vh]">
+    <section id="about" className="h-[70vh]">
       <div className="flex flex-col items-center justify-center md:flex-row">
         <div className="md:w-1/2 md:flex md:flex-col">
           <h3 className="mb-2 text-xl text-secondary opacity-70">
@@ -19,17 +19,22 @@ const About = () => {
             I am a student of Computer Science at the West Pomeranian University
             of Technology.
             <br />
+            <br />
+            I am interested in modern front-end technologies - I try to learn
+            new things every day
+            <br />
+            In my free time, I study 💻, go to the gym 🏋🏻 and meet with friends.
           </p>
         </div>
         <div className="justify-center hidden mt-10 md:mt-0 md:flex md:justify-center">
           <Lottie
             animationData={coderAnimation}
             loop={true}
-            className="md:h-64 lg:h-96"
+            className="md:h-64 lg:h-96 xl:h-1/5"
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default About;
