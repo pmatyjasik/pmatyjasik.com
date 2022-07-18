@@ -17,7 +17,7 @@ const WideSection = ({
   contact = false,
 }: Props) => {
   return (
-    <div id={id} className="px-2 py-10 mt-10 bg-secondary full-width">
+    <section id={id} className="px-2 py-10 mt-10 bg-secondary full-width">
       <SectionHeading subheading={subheading} heading={heading} />
       <div
         className={`container flex ${
@@ -28,7 +28,7 @@ const WideSection = ({
       >
         {children}
       </div>
-    </div>
+    </section>
   );
 };
 
