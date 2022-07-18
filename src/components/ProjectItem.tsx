@@ -19,7 +19,7 @@ const ProjectItem = ({
   return (
     <div className="flex flex-row justify-center mt-7">
       <img
-        className="hidden h-64 shadow-lg rounded-xl md:block"
+        className="hidden shadow-lg rounded-xl md:block md:h-52 lg:h-72"
         src={imageSrc}
         alt={projectTitle}
       />
@@ -27,7 +27,7 @@ const ProjectItem = ({
         <span className="mb-2 text-3xl font-semibold text-secondary">
           {projectTitle}
         </span>
-        <p className="text-base text-secondary w-auto md:w-[400px]">
+        <p className="text-base text-secondary w-auto md:max-w-[400px]">
           {projectDescription}
         </p>
         <div className="flex flex-row items-end">
