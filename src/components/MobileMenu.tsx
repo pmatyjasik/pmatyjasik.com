@@ -21,7 +21,7 @@ const MobileMenu = ({ isOpen }: Props) => {
       <ul className="py-10">
         <NavItem isOpen={true} url="#about" text="About" />
         <NavItem isOpen={true} url="#technologies" text="Technologies" />
-        <NavItem isOpen={true} url="#" text="Portfolio" />
+        <NavItem isOpen={true} url="#portfolio" text="Portfolio" />
         <NavItem isOpen={true} url="#contact" text="Contact" />
       </ul>
     </motion.div>
