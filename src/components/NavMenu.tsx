@@ -14,7 +14,7 @@ const NavMenu = () => {
         <ul className="flex justify-around text-white">
           <NavItem url="#about" text="About" />
           <NavItem url="#technologies" text="Technologies" />
-          <NavItem url="#" text="Portfolio" />
+          <NavItem url="#portfolio" text="Portfolio" />
           <NavItem url="#contact" text="Contact" />
         </ul>
       </nav>
