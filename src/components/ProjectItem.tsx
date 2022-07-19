@@ -40,14 +40,18 @@ const ProjectItem = ({
             target="_blank"
           >
             <button
-              className="px-4 py-2 mt-4 text-sm text-white shadow-xl bg-primary rounded-2xl hover:duration-300 hover:opacity-70 disabled:bg-secondary disabled:opacity-70"
+              className={`px-4 py-2 mt-4 text-sm font-medium text-white ${
+                disabled
+                  ? ""
+                  : "transition-all hover:shadow-2xl hover:-translate-y-1"
+              } bg-primary rounded-2xl shadow-xl  disabled:bg-secondary disabled:opacity-70`}
               disabled={disabled}
             >
               Go to page
             </button>
           </a>
           <a href={githubLink} rel="noopener noreferrer" target="_blank">
-            <SiGithub className="w-10 h-10 ml-2 hover:duration-300 hover:opacity-70" />
+            <SiGithub className="w-10 h-10 ml-2 transition-all hover:-translate-y-1" />
           </a>
         </div>
       </div>
