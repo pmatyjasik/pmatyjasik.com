@@ -7,6 +7,7 @@ interface Props {
   projectDescription: string;
   projectLink: string;
   githubLink: string;
+  disabled?: boolean;
 }
 
 const ProjectItem = ({
@@ -15,6 +16,7 @@ const ProjectItem = ({
   projectDescription,
   projectLink,
   githubLink,
+  disabled = false,
 }: Props) => {
   return (
     <div className="flex flex-row justify-center mt-7">
@@ -27,17 +29,25 @@ const ProjectItem = ({
         <span className="mb-2 text-3xl font-semibold text-secondary">
           {projectTitle}
         </span>
-        <p className="text-base text-secondary w-auto md:max-w-[400px]">
+        <p className="text-sm text-secondary w-auto md:max-w-[400px]">
           {projectDescription}
         </p>
         <div className="flex flex-row items-end">
-          <a href={projectLink} rel="noopener noreferrer" target="_blank">
-            <button className="px-4 py-2 mt-4 text-sm text-white shadow-xl bg-primary rounded-2xl hover:opacity-90">
+          <a
+            className="cursor-not-allowed"
+            href={projectLink}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <button
+              className="px-4 py-2 mt-4 text-sm text-white shadow-xl bg-primary rounded-2xl hover:duration-300 hover:opacity-70 disabled:bg-secondary disabled:opacity-70"
+              disabled={disabled}
+            >
               Go to page
             </button>
           </a>
           <a href={githubLink} rel="noopener noreferrer" target="_blank">
-            <SiGithub className="w-10 h-10 ml-2 hover:opacity-90" />
+            <SiGithub className="w-10 h-10 ml-2 hover:duration-300 hover:opacity-70" />
           </a>
         </div>
       </div>
