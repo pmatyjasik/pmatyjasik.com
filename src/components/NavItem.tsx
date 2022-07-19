@@ -7,10 +7,12 @@ interface Props {
 }
 
 const NavItem = ({ url, text, isOpen = false }: Props) => (
-  <li className={`text-white font-medium ${isOpen ? "mb-10" : ""}`}>
-    <a className="hover:duration-300 hover:opacity-70" href={url}>
-      {text}
-    </a>
+  <li
+    className={`text-white font-medium ${
+      isOpen ? "mb-10" : ""
+    } transition-all hover:-translate-y-1`}
+  >
+    <a href={url}>{text}</a>
   </li>
 );
 
