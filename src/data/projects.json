@@ -1,0 +1,36 @@
+{
+   "data":[
+      {
+         "imageSrc":"projects/pmatyjasik.png",
+         "projectTitle":"pmatyjasik.com",
+         "projectDescription":"The page you are currently on is my business card. Technologies used: React.js, Typescript, TailwindCSS, GitHub.",
+         "projectLink":"https://www.pmatyjasik.com/",
+         "githubLink":"https://github.com/pmatyjasik/pmatyjasik.com",
+         "disabled":true
+      },
+      {
+         "imageSrc":"projects/employee-pulse.png",
+         "projectTitle":"Employee Pulse",
+         "projectDescription":"Project carried out at the University in a group of 4 people. Technologies used: React.js, Typescript, TailwindCSS, GitHub, Firebase. In the final phase made migrations from React.js to Next.js.",
+         "projectLink":"https://employee-pulse.vercel.app/",
+         "githubLink":"https://github.com/pmatyjasik/Employee-pulse",
+         "disabled":false
+      },
+      {
+         "imageSrc":"projects/quization.png",
+         "projectTitle":"Quization",
+         "projectDescription":"Project carried out at the University in a group of 4 people. Technologies used: Next.js, Typescript, TailwindCSS, GitHub, Firebase.",
+         "projectLink":"https://quization.vercel.app/",
+         "githubLink":"https://github.com/pmatyjasik/quization",
+         "disabled":false
+      },
+      {
+         "imageSrc":"projects/booking.png",
+         "projectTitle":"Booking",
+         "projectDescription":"One of several projects I did at the beginning of my education. The project was done in HTML and CSS.",
+         "projectLink":"https://pmatyjasik.github.io/Booking/",
+         "githubLink":"https://github.com/pmatyjasik/Booking",
+         "disabled":false
+      }
+   ]
+}
