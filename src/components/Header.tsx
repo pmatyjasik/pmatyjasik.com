@@ -6,7 +6,7 @@ const Header = () => (
   <header className="top-0 w-full px-4 py-5 overflow-hidden">
     <div className="container flex items-center justify-between mx-auto">
       <a href="/" className="mt-3">
-        <span className="text-xl font-semibold cursor-pointer text-primary">
+        <span className="text-xl font-semibold cursor-pointer md:text-2xl text-primary">
           Piotr Matyjasik
         </span>
       </a>
