@@ -11,18 +11,18 @@ export function useCloseComponent(
       }
     }
 
-    function handleClickEsc(event: KeyboardEvent) {
-      if (event.key === 'Escape') {
-        cb();
-      }
+    function handleOnScroll(event: Event) {
+        if (ref.current) {
+            cb();
+        }
     }
 
     document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('keydown', handleClickEsc);
+    document.addEventListener('scroll', handleOnScroll);
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('keydown', handleClickEsc);
+    document.removeEventListener('mousedown', handleClickOutside);
+    document.removeEventListener('scroll', handleOnScroll);
     };
   }, [ref, cb]);
 }
