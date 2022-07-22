@@ -26,7 +26,7 @@ const MobileMenu = () => {
         initial="closed"
         variants={variants}
         id="burger_menu"
-        className="fixed right-0 z-10 flex flex-col items-center w-2/5 rounded-bl-[200px] rounded-tl-[50px] bg-primary top-15 md:hidden"
+        className="fixed right-0 z-10 flex flex-col items-center w-2/5 rounded-bl-[150px] rounded-tl-[50px] bg-primary top-15 md:hidden"
       >
         <ul className="py-10" onClick={toggle}>
           <NavItem navMobile={true} url="#about" text="About" />
