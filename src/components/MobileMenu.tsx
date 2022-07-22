@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import NavItem from "components/NavItem";
 import { FaBars } from "react-icons/fa";
+import { useCloseComponent } from "hooks/useCloseComponent";
 
 const variants = {
   open: { x: 0, transition: { type: "linear" } },
@@ -12,8 +13,10 @@ const MobileMenu = () => {
   const toggle = () => {
     setIsOpen((prev) => !prev);
   };
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  useCloseComponent(wrapperRef, () => setIsOpen(false));
   return (
-    <>
+    <div ref={wrapperRef}>
       <FaBars
         className={`z-50 w-8 h-8 text-white cursor-pointer md:hidden`}
         onClick={toggle}
@@ -32,7 +35,7 @@ const MobileMenu = () => {
           <NavItem navMobile={true} url="#contact" text="Contact" />
         </ul>
       </motion.div>
-    </>
+    </div>
   );
 };
 export default MobileMenu;
