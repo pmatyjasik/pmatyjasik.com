@@ -14,7 +14,7 @@ const About = () => {
             Front-end Developer
           </span>
           <p className="mt-5 leading-relaxed sm:leading-loose text-content md:w-5/6 lg:w-4/5 xl:w-3/4">
-            Hello, my name is Piotr Matyjasik I am from Poland 🇵🇱.
+            Hello, I am Piotr Matyjasik I am from Poland 🇵🇱.
             <br />I am a student of Computer Science at the West Pomeranian
             University of Technology.
           </p>
