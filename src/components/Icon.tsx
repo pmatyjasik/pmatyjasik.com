@@ -11,7 +11,7 @@ interface Props {
 const Icon = ({ Icon, className, contact = false }: Props) => {
   return (
     <motion.div
-      initial={{ x: -100, opacity: 0.1, scale: 0.1 }}
+      initial={{ x: -50, opacity: 0.1, scale: 0.1 }}
       whileInView={{ x: 0, opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
