@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id="about" className="h-[80vh] overflow-hidden">
       <div className="flex flex-col items-center justify-center md:flex-row">
-        <div className="md:flex md:flex-col">
+        <div className="hidden md:flex md:flex-col overflow:">
           <motion.h3
             className="mb-2 text-xl text-secondary opacity-70"
             initial={{ opacity: 0.1, scale: 0.1 }}
