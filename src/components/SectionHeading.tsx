@@ -13,7 +13,7 @@ const SectionHeading = ({ subheading, heading, inverted = false }: Props) => {
       initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.5 }}
     >
       <span
         className={`block text-sm font-semibold text-center ${
