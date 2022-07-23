@@ -1,5 +1,6 @@
 import React from "react";
 import { SiGithub } from "react-icons/si";
+import { motion } from "framer-motion";
 
 interface Props {
   imageSrc: string;
@@ -20,12 +21,22 @@ const ProjectItem = ({
 }: Props) => {
   return (
     <div className="flex flex-row justify-center mt-7">
-      <img
+      <motion.img
+        initial={{ opacity: 0.5, scale: 0.5, x: -100 }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
         className="hidden shadow-lg rounded-xl md:block md:h-52 lg:h-72"
         src={imageSrc}
         alt={projectTitle}
       />
-      <div className="flex flex-col justify-center ml-8">
+      <motion.div
+        className="flex flex-col justify-center ml-8"
+        initial={{ opacity: 0.5, scale: 0.5, x: 100 }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
         <span className="mb-2 text-3xl font-semibold text-secondary">
           {projectTitle}
         </span>
@@ -54,7 +65,7 @@ const ProjectItem = ({
             <SiGithub className="w-10 h-10 ml-2 transition-all hover:-translate-y-1" />
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
