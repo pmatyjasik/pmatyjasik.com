@@ -22,14 +22,10 @@ const ProjectItem = ({
   return (
     <motion.div
       className="flex flex-row justify-center mt-7"
-      initial="hidden"
-      whileInView="visible"
+      initial={{ x: -500 }}
+      whileInView={{ x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      variants={{
-        visible: { x: 0 },
-        hidden: { x: -1000 },
-      }}
     >
       <img
         className="hidden shadow-lg rounded-xl md:block md:h-52 lg:h-72"
