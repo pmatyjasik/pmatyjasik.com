@@ -22,7 +22,7 @@ const ProjectItem = ({
   return (
     <motion.div
       className="flex flex-row justify-center mt-7"
-      initial={{ opacity: 0.5, scale: 0.5, x: -500 }}
+      initial={{ opacity: 0.5, scale: 0.5, x: -200 }}
       whileInView={{ opacity: 1, scale: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
