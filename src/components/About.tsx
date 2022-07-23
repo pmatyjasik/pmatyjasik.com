@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className="h-[80vh]">
+    <section id="about" className="h-[80vh] overflow-hidden">
       <div className="flex flex-col items-center justify-center md:flex-row">
         <div className="md:flex md:flex-col">
           <motion.h3
