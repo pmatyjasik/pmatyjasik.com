@@ -1,5 +1,6 @@
 import React from "react";
 import { SiGithub } from "react-icons/si";
+import { motion } from "framer-motion";
 
 interface Props {
   imageSrc: string;
@@ -19,7 +20,17 @@ const ProjectItem = ({
   disabled = false,
 }: Props) => {
   return (
-    <div className="flex flex-row justify-center mt-7">
+    <motion.div
+      className="flex flex-row justify-center mt-7"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        visible: { x: 0 },
+        hidden: { x: -1000 },
+      }}
+    >
       <img
         className="hidden shadow-lg rounded-xl md:block md:h-52 lg:h-72"
         src={imageSrc}
@@ -55,7 +66,7 @@ const ProjectItem = ({
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
