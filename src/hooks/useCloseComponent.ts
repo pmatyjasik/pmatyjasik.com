@@ -1,19 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export function useCloseComponent(
-  ref: React.RefObject<HTMLElement>,
-  cb: () => void
-) {
+  ref: React.RefObject<HTMLElement>
+){
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleCloseMenu = () => {
+    setIsOpen((prev) => !prev);
+  }
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
-        cb();
+      if (ref.current && !ref.current.contains(event.target as Node) && isOpen) {
+        handleCloseMenu();
       }
     }
 
     function handleOnScroll(event: Event) {
-        if (ref.current) {
-            cb();
+        if (ref.current && isOpen) {
+          handleCloseMenu();
         }
     }
 
@@ -24,5 +29,6 @@ export function useCloseComponent(
     document.removeEventListener('mousedown', handleClickOutside);
     document.removeEventListener('scroll', handleOnScroll);
     };
-  }, [ref, cb]);
+  }, [isOpen, ref]);
+  return {isOpen, setIsOpen}
 }
