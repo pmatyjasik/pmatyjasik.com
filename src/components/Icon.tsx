@@ -27,7 +27,7 @@ const Icon = ({ Icon, className, contact = false }: Props) => {
     >
       {React.cloneElement(Icon, {
         className: `${
-          contact ? "w-14 h-14 md:w-20 md:h-20" : "w-20 h-20 cursor-move"
+          contact ? "w-14 h-14 md:w-20 md:h-20" : "w-20 h-20 cursor-pointer"
         } text-white ${className}`,
       })}
     </motion.div>
