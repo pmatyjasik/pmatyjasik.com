@@ -17,12 +17,10 @@ const Icon = ({ Icon, className, contact = false }: Props) => {
       transition={{ duration: 0.5 }}
       {...(!contact
         ? {
-            drag: true,
-            dragConstraints: {
-              top: -30,
-              left: -30,
-              right: 30,
-              bottom: 30,
+            whileHover: {
+              rotate: [0, 180, 0],
+              scale: [1, 0.5, 1],
+              transition: { duration: 1 },
             },
           }
         : {})}
