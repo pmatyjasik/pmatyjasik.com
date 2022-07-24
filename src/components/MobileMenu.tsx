@@ -10,7 +10,7 @@ const variants = {
 };
 const MobileMenu = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const { isOpen, setIsOpen } = useCloseComponent(wrapperRef);
+  const [isOpen, setIsOpen] = useCloseComponent(wrapperRef);
 
   const toggle = () => {
     setIsOpen((prev) => !prev);
