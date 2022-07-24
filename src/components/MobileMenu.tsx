@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import NavItem from "components/NavItem";
 import { FaBars } from "react-icons/fa";
@@ -9,12 +9,13 @@ const variants = {
   closed: { x: "100%", transition: { type: "linear" } },
 };
 const MobileMenu = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const [isOpen, setIsOpen] = useCloseComponent(wrapperRef);
+
   const toggle = () => {
     setIsOpen((prev) => !prev);
   };
-  const wrapperRef = useRef<HTMLDivElement>(null);
-  useCloseComponent(wrapperRef, () => setIsOpen(false));
+
   return (
     <div ref={wrapperRef}>
       <FaBars

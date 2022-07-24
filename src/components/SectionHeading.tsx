@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 
 interface Props {
@@ -9,12 +8,7 @@ interface Props {
 
 const SectionHeading = ({ subheading, heading, inverted = false }: Props) => {
   return (
-    <motion.div
-      initial={{ y: -100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.3 }}
-    >
+    <div>
       <span
         className={`block text-sm font-semibold text-center ${
           inverted ? "text-[#000000]" : "text-white"
@@ -29,7 +23,7 @@ const SectionHeading = ({ subheading, heading, inverted = false }: Props) => {
       >
         {heading}
       </span>
-    </motion.div>
+    </div>
   );
 };
 
