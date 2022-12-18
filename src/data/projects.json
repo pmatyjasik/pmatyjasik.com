@@ -1,5 +1,14 @@
 {
    "data":[
+            {
+         "imageSrc":"projects/yourbooks.png",
+         "projectTitle":"YourBooks",
+         "projectDescription":"The application was developed for an engineering thesis (for this reason I cannot share the source code). Technologies used: Next.js, Typescript, TailwindCSS, GitHub, Firebase.",
+         "projectLink":"https://your-books-engineer.vercel.app/",
+         "githubLink":"https://github.com/pmatyjasik",
+         "disabled":false,
+         "githubDisabled":true
+      },
       {
          "imageSrc":"projects/pmatyjasik.png",
          "projectTitle":"pmatyjasik.com",

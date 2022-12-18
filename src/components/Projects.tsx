@@ -19,6 +19,7 @@ const Projects = () => {
           projectLink={project.projectLink}
           githubLink={project.githubLink}
           disabled={project.disabled}
+          githubDisabled={project?.githubDisabled}
           key={`${index}-${project.projectTitle}`}
         />
       ))}

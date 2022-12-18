@@ -7,8 +7,9 @@ interface Props {
   projectTitle: string;
   projectDescription: string;
   projectLink: string;
-  githubLink: string;
+  githubLink?: string;
   disabled?: boolean;
+  githubDisabled?: boolean;
 }
 
 const ProjectItem = ({
@@ -18,6 +19,7 @@ const ProjectItem = ({
   projectLink,
   githubLink,
   disabled = false,
+  githubDisabled = false,
 }: Props) => {
   return (
     <div className="flex flex-row justify-center mt-7">
@@ -61,9 +63,11 @@ const ProjectItem = ({
               Go to page
             </button>
           </a>
-          <a href={githubLink} rel="noopener noreferrer" target="_blank">
-            <SiGithub className="w-10 h-10 ml-2 transition-all hover:-translate-y-1" />
-          </a>
+          {!githubDisabled && (
+            <a href={githubLink} rel="noopener noreferrer" target="_blank">
+              <SiGithub className="w-10 h-10 ml-2 transition-all hover:-translate-y-1 " />
+            </a>
+          )}
         </div>
       </motion.div>
     </div>
