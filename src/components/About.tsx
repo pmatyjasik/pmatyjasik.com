@@ -15,8 +15,9 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Piotr Matyjasik
+            Piotr Matyjasik 🇵🇱
           </motion.h3>
+          <i>Bachelor of Computer Science</i>
           <motion.span
             className="text-4xl font-semibold sm:text-5xl text-heading"
             initial={{ y: -200, opacity: 0 }}
@@ -33,9 +34,8 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Hello, I am Piotr Matyjasik I am from Poland 🇵🇱.
-            <br />I am a student of Computer Science at the West Pomeranian
-            University of Technology.
+            I am currently working as a front-end developer at{" "}
+            <strong>Wirtualna Polska.</strong>
           </motion.p>
         </div>
         <motion.div
