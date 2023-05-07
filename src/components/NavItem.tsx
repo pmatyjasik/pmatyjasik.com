@@ -10,7 +10,7 @@ const NavItem = ({ url, text, navMobile = false }: Props) => (
   <li
     className={`text-white font-medium ${
       navMobile ? "mb-10" : ""
-    } transition-all hover:-translate-y-1`}
+    }hover:opacity-50 `}
   >
     <a href={url}>{text}</a>
   </li>
