@@ -1,9 +1,17 @@
 {
    "data":[
-            {
+      {
+         "imageSrc":"projects/employee-pulse.png",
+         "projectTitle":"Employee Pulse",
+         "projectDescription":"The application is under continuous development (open source). Technologies used: Next.js, Typescript, TailwindCSS, Firebase",
+         "projectLink":"https://employee-pulse.vercel.app/",
+         "githubLink":"https://github.com/Ryczko/Employee-pulse",
+         "disabled":false
+      },
+      {
          "imageSrc":"projects/yourbooks.png",
          "projectTitle":"YourBooks",
-         "projectDescription":"The application was developed for an engineering thesis (for this reason I cannot share the source code). Technologies used: Next.js, Typescript, TailwindCSS, GitHub, Firebase.",
+         "projectDescription":"The application was developed for an engineering thesis (for this reason I cannot share the source code). Technologies used: Next.js, Typescript, TailwindCSS, Firebase.",
          "projectLink":"https://your-books-engineer.vercel.app/",
          "githubLink":"https://github.com/pmatyjasik/your-books",
          "disabled":false
@@ -11,33 +19,25 @@
       {
          "imageSrc":"projects/pmatyjasik.png",
          "projectTitle":"pmatyjasik.com",
-         "projectDescription":"The page you are currently on is my business card. Technologies used: React.js, Typescript, TailwindCSS, GitHub.",
+         "projectDescription":"The page you are currently on is my business card. Technologies used: React.js, Typescript, TailwindCSS.",
          "projectLink":"https://www.pmatyjasik.com/",
          "githubLink":"https://github.com/pmatyjasik/pmatyjasik.com",
          "disabled":true
       },
       {
-         "imageSrc":"projects/employee-pulse.png",
-         "projectTitle":"Employee Pulse",
-         "projectDescription":"Project carried out at the University in a group of 4 people. Technologies used: React.js, Typescript, TailwindCSS, GitHub, Firebase. In the final phase made migrations from React.js to Next.js.",
-         "projectLink":"https://employee-pulse.vercel.app/",
-         "githubLink":"https://github.com/pmatyjasik/Employee-pulse",
-         "disabled":false
-      },
-      {
          "imageSrc":"projects/quization.png",
          "projectTitle":"Quization",
-         "projectDescription":"Project carried out at the University in a group of 4 people. Technologies used: Next.js, Typescript, TailwindCSS, GitHub, Firebase.",
+         "projectDescription":"Project carried out at the University. Technologies used: Next.js, Typescript, TailwindCSS, Firebase.",
          "projectLink":"https://quization.vercel.app/",
          "githubLink":"https://github.com/pmatyjasik/quization",
          "disabled":false
       },
       {
-         "imageSrc":"projects/booking.png",
-         "projectTitle":"Booking",
-         "projectDescription":"One of several projects I did at the beginning of my education. The project was done in HTML and CSS.",
-         "projectLink":"https://pmatyjasik.github.io/Booking/",
-         "githubLink":"https://github.com/pmatyjasik/Booking",
+         "imageSrc":"projects/photo-gallery.png",
+         "projectTitle":"PhotoGallery",
+         "projectDescription":"The idea behind the application was to reiterate the basics. Technologies used: Next.js, Typescript, TailwindCSS.",
+         "projectLink":"https://photo-gallery-sage-seven.vercel.app/",
+         "githubLink":"https://github.com/pmatyjasik/photo-gallery",
          "disabled":false
       }
    ]
