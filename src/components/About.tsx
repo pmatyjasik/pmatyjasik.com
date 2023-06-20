@@ -19,7 +19,7 @@ const About = () => {
           </motion.h3>
           <i>Bachelor of Computer Science</i>
           <motion.span
-            className="text-4xl font-semibold sm:text-5xl text-heading"
+            className="text-4xl font-semibold sm:text-5xl text-heading block"
             initial={{ y: -200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
