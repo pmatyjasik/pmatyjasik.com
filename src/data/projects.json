@@ -2,10 +2,10 @@
    "data":[
       {
          "imageSrc":"projects/employee-pulse.png",
-         "projectTitle":"Employee Pulse",
+         "projectTitle":"FormsLab",
          "projectDescription":"The application is under continuous development (open source). Technologies used: Next.js, Typescript, TailwindCSS, Firebase",
-         "projectLink":"https://employee-pulse.vercel.app/",
-         "githubLink":"https://github.com/Ryczko/Employee-pulse",
+         "projectLink":"https://formslab.vercel.app/",
+         "githubLink":"https://github.com/Ryczko/FormsLab",
          "disabled":false
       },
       {
@@ -18,9 +18,9 @@
       },
       {
          "imageSrc":"projects/pmatyjasik.png",
-         "projectTitle":"pmatyjasik.com",
+         "projectTitle":"pmatyjasik.dev",
          "projectDescription":"The page you are currently on is my business card. Technologies used: React.js, Typescript, TailwindCSS.",
-         "projectLink":"https://www.pmatyjasik.com/",
+         "projectLink":"https://www.pmatyjasik.dev/",
          "githubLink":"https://github.com/pmatyjasik/pmatyjasik.com",
          "disabled":true
       },
